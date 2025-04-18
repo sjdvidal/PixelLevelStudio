@@ -1,13 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelLevelStudio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelLevelStudio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+      color: white;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+    }
+    .section-dark {
+      background-color: #222;
+    }
+    .btn-primary {
+      background-color: #ff4d6d;
+      border-color: #ff4d6d;
+    }
+    .btn-primary:hover {
+      background-color: #ff3360;
+      border-color: #ff3360;
+    }
+    .card {
+      background-color: #2e2e3e;
+      border: none;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <h1>PixelLevelStudio</h1>
-    <p>Hola, somos PixelLevelStudio</p>
-    <a href="https://linktr.ee/PixelLevelStudio">Mira nuestros servicios.</a>
+
+  <header>
+    <div class="content container">
+      <h1 class="display-3 fw-bold">PixelLevelStudio</h1>
+      <p class="lead mb-4">Diseño. Tecnología. Creatividad.</p>
+      <a href="https://linktr.ee/PixelLevelStudio" class="btn btn-primary btn-lg">Descubre lo que hacemos</a>
+    </div>
+  </header>
+
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Nuestros Servicios</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-3 shadow">
+            <h4 class="mb-3">Videojuegos</h4>
+            <p>Desde concept art hasta el juego completo. Creamos mundos jugables con pasión.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-3 shadow">
+            <h4 class="mb-3">Web & Apps</h4>
+            <p>Landing pages, tiendas online, apps a medida. Pensadas para escalar y destacar.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 p-3 shadow">
+            <h4 class="mb-3">Arte & Branding</h4>
+            <p>Ilustración, motion graphics, identidad visual... todo con nuestro sello digital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 section-dark text-center">
+    <div class="container">
+      <h2 class="mb-4">¿Quieres colaborar?</h2>
+      <p class="mb-4">Trabajamos con estudios, marcas y soñadores como tú. <br /> ¡Hablemos!</p>
+      <a href="https://linktr.ee/PixelLevelStudio" class="btn btn-outline-light btn-lg">Contáctanos</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-black text-white-50">
+    <small>&copy; 2025 PixelLevelStudio. Hecho con ❤️ y creatividad.</small>
+  </footer>
+
 </body>
 </html>
